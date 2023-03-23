@@ -22,7 +22,7 @@ public class Point {
 	}
 	
 	public double Distance( Point p ) {
-		double expression = Math.pow(this.x - p.getX(), 2.0) + Math.pow(this.y - p.getY(), 2.0);
+		double expression = Math.pow(this.x - p.getX(), 2) + Math.pow(this.y - p.getY(), 2);
 		double distance = Math.sqrt(expression);
 		return distance;
 	}

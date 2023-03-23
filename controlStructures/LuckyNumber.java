@@ -3,7 +3,7 @@ package controlStructures;
 public class LuckyNumber {
 
 	public static void main(String[] args) {
-		int num = 16253;
+		int num = 1523;
 		
 		String str = String.valueOf(num);
 		int length = str.length();
@@ -18,7 +18,7 @@ public class LuckyNumber {
 		int sum = 0;
 		while( N > 0 ) {
 			rem = N % 10;
-			sum = sum + rem;
+			sum = sum + (int)Math.pow(rem, 2);
 			N = N / 100;
 		}
 		
